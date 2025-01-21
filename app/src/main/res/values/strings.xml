@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KEMBANGDAMAN</string>
+    <string name="title_home">Home</string>
+    <string name="kembangdaman_text">
+        Silahkan Login atau Register untuk melanjutkan, bilamana belum mempunyai akun silahkan Register terlebih dahulu. Setelah itu silahkan Login.
+    </string>
+
+</resources>

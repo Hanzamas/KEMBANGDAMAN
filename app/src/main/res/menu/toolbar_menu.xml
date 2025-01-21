@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reload"
+        android:icon="@drawable/ic_refresh"
+        android:title="Reload"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menu_option2"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="About"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_option3"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Logout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_option1"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,450 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:id="@+id/scrollView"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+        <!-- Application Title -->
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Application Logo -->
+        <ImageView
+            android:id="@+id/ivAppLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/kembangdaman"
+            app:layout_constraintTop_toBottomOf="@id/tvAppTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Application Description -->
+        <TextView
+            android:id="@+id/tvAppDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kembang Daman adalah sebuah inovasi berbasis teknologi informasi (IT) yang dikembangkan oleh Kantor Kementerian Agama (Kemenag) Kabupaten Jombang untuk meningkatkan kualitas dan efisiensi pelayanan publik. Aplikasi ini dirancang untuk memudahkan masyarakat dalam mengakses berbagai layanan Kemenag, seperti layanan keagamaan, pendidikan, kepegawaian, penyelenggaraan haji dan umroh, zakat, wakaf, dan lainnya, tanpa harus datang langsung ke kantor."
+            android:justificationMode="inter_word"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/ivAppLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Features Section Title -->
+        <TextView
+            android:id="@+id/tvFeaturesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvAppDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Features Section -->
+
+        <!-- Contact Information Title -->
+        <TextView
+            android:id="@+id/tvFeatures"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="1. Pelayanan Online: Masyarakat dapat mengajukan permohonan dan mengunggah dokumen persyaratan melalui gadget atau smartphone. Proses verifikasi dan pengunduhan berkas yang telah selesai juga dapat dilakukan secara online.\n\n2. Transparansi dan Monitoring: Aplikasi ini memungkinkan monitoring real-time terhadap status permohonan, sehingga memastikan transparansi dan akuntabilitas dalam pelayanan. Kepala Kantor Kemenag Jombang dapat memantau progres setiap permohonan dan mengambil tindakan jika terjadi kendala.\n\n3. Efisiensi dan Kecepatan: Dengan Kembang Daman, waktu dan biaya yang biasanya dikeluarkan untuk datang ke kantor dapat dihemat. Pelayanan menjadi lebih cepat dan efektif.\n\n4. Gratis dan Mudah Diakses: Aplikasi ini dapat diakses secara gratis oleh masyarakat, dan dirancang untuk memudahkan akses, terutama bagi mereka yang tinggal di daerah pinggiran."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFeaturesTitle" />
+
+        <TextView
+            android:id="@+id/tvContactInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Kontak"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvFeatures"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Contact Information -->
+        <TextView
+            android:id="@+id/tvContactInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alamat: Jl. Pattimura No.26, Jombatan, Kec. Jombang, Kabupaten Jombang, Jawa Timur 61419\n\nTelepon: 0321-861321\n\nEmail: kemenagkabjombang@gmail.com"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/tvContactInfoTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Clickable Map -->
+        <ImageView
+            android:id="@+id/mapView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/mep"
+            app:layout_constraintTop_toBottomOf="@id/tvContactInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="Clickable map"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Application Flow Title -->
+        <TextView
+            android:id="@+id/tvAppFlowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alur Pelayanan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/mapView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Application Flow Image -->
+        <ImageView
+            android:id="@+id/ivAppFlow"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/alurpelayanan"
+            app:layout_constraintTop_toBottomOf="@id/tvAppFlowTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Tutorial Section -->
+        <TextView
+            android:id="@+id/tvTutorialTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutorial KEMBANGDAMAN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ivAppFlow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Steps 1 to 7 -->
+        <TextView
+            android:id="@+id/tvStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Pergi ke layanan"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvTutorialTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/layanan"
+            app:layout_constraintTop_toBottomOf="@id/tvStep1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Setelah membuat akun kemudian login harap baca terlebih dahulu keseluruhan home, setelah itu pergi ke layanan."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Pilih Layanan"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/pilihlayanan"
+            app:layout_constraintTop_toBottomOf="@id/tvStep2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pilih Layanan yang diperlukan."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Pilih Urusan"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/urusan"
+            app:layout_constraintTop_toBottomOf="@id/tvStep3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pilih Urusan pemberkasan yang dibutuhkan."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Masukan Informasi"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep4"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/informasi"
+            app:layout_constraintTop_toBottomOf="@id/tvStep4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Masukan Informasi yang diperlukan kemudian seperti gambar diatas dan sebelum tekan lanjutkan scroll kebawah untuk meliaht apa saja dokumen yang dibutuhkan. Contoh: Scan KK, Scan KTP, SCAN KTM, dan lain lain."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Upload dan Dokumen"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep5"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/uploaddownload"
+            app:layout_constraintTop_toBottomOf="@id/tvStep5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Upload dokumen yang diperlukan dan jangan lupa download surat pertanyaan atau surat lainnya bilamana ada tombol download file untuk template nya."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Edit/Hapus Pengajuan"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep6"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/edithapus"
+            app:layout_constraintTop_toBottomOf="@id/tvStep6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tekan Tombol Gir kemudian tekan edit atau hapus batal pengajuan."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Riwayat Surat"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep7"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/riwayatdownload"
+            app:layout_constraintTop_toBottomOf="@id/tvStep7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Buka Tombol Riwayat untuk melihat riwayat surat yang diajukan, bisa juga untuk mendownload surat yang telah selesai atau melihat surat yang ditolak."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvStep8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. Profil"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivStep8"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/profil"
+            app:layout_constraintTop_toBottomOf="@id/tvStep8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tekan Tombol Profil untuk merubah profil dan jangan lupa scroll kebawah untuk tombol update profil. Bisa juga menghubungni CS disana apabila kurang paham."
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/ivStep8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvExplanation9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/tvExplanation8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <WebView
+            android:id="@+id/homeWebView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvExplanation9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
